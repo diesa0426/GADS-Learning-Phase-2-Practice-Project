@@ -1,0 +1,46 @@
+Lab: Google Cloud Fundamentals: Getting Started with Cloud Marketplace
+
+Objectives:
+	- In this lab, you'll learn how to launch a solution using Cloud Marketplace.
+
+
+Step 1: 
+
+	- Use Cloud Marketplace to deploy a LAMP stack
+	
+		Open navigation and click Marketplace
+			
+		Type in the search bar: LAMP
+			
+		Click and launch: LAMP Certified by Bitnami.
+			 
+		Select the Zone provide for your project on the Qwiklab.
+			 
+		Leave everything unchanged and click Deploy
+	 
+Step 2: 
+
+	- Verify your deployment 
+	
+		Go to LAMP Certified by Bitnami, click SSH.
+	 
+		Type this command and excute to change the current directory: 
+	
+			cd /opt/bitnami
+		
+		
+		To copy the phpinfo.php script from the installation directory to a publicly accessible location under the web server document root, execute the following command:
+			
+			sudo sh -c 'echo "<?php phpinfo(); ?>" > apache2/htdocs/phpinfo.php'
+			
+		Close the SSH and excute this command:
+		
+			Exit
+			
+		Open the browser tab
+		
+		Type this URL and replace the site address:
+		
+			http://SITE_ADDRESS/phpinfo.php
+		
+		End
